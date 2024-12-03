@@ -11,7 +11,7 @@ load_dotenv()
 
 class GPTChat:
     def __init__(self, api_key: str):
-        st.set_page_config(page_title='QMD-GPT', page_icon='💬')
+        st.set_page_config(page_title='Fixed Income-GPT', page_icon='💬')
         self.client = OpenAI(api_key=api_key)
         self.MODEL_MAPPING = MODEL_MAPPING
         self.COST_PER_TOKEN = COST_PER_TOKEN
@@ -75,7 +75,7 @@ class GPTChat:
                 st.chat_message(name='ai', avatar='🤖').markdown(ai_message)
 
     def chat_demo(self):
-        st.markdown('# QMD GPT', unsafe_allow_html=True)
+        st.markdown('# Fixed Income GPT', unsafe_allow_html=True)
 
         model_name = st.sidebar.radio('Choose a model:', self.MODEL_MAPPING)
         counter_placeholder = st.sidebar.empty()

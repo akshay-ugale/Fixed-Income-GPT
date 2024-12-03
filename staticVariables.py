@@ -133,7 +133,18 @@ market_conventions = {
         "Interest Calculation Method": "Simple",
         "Compounding Frequency": "Annual"
     },
-    # Add other currencies as needed
+    "EUR": {
+        "Day Count Convention": "Actual/360",
+        "Discounting Method": "Annual",
+        "Interest Calculation Method": "Simple",
+        "Compounding Frequency": "Annual"
+    },
+    "GBP": {
+        "Day Count Convention": "Actual/365",
+        "Discounting Method": "Annual",
+        "Interest Calculation Method": "Simple",
+        "Compounding Frequency": "Annual"
+    }
 }
 
 # market_conventions = json.dumps(market_conventions_strng, indent=4)
@@ -141,8 +152,46 @@ market_conventions = {
 # Sample yield curve data (replace with actual data)
 yield_curve = {
     "USD": {
-        "2024-12-03": 0.03,
+        "0.5": 2.50,
+        "1.0": 2.70,
+        "1.5": 2.90,
+        "2.0": 3.00,
+        "3.0": 3.10,
+        "5.0": 3.20,
+        "7.0": 3.25,
+        "10.0": 3.30,
+        "15.0": 3.40,
+        "20.0": 3.50,
+        "25.0": 3.55,
+        "30.0": 3.60
     },
+    "EUR": {
+        "0.5": 1.00,
+        "1.0": 1.20,
+        "1.5": 1.30,
+        "2.0": 1.40,
+        "3.0": 1.50,
+        "5.0": 1.60,
+        "7.0": 1.70,
+        "10.0": 1.80,
+        "15.0": 2.00,
+        "20.0": 2.10,
+        "25.0": 2.20,
+        "30.0": 2.30
+    },
+    "GBP": {
+        "0.5": 3.00,
+        "1.0": 3.10,
+        "1.5": 3.20,
+        "2.0": 3.25,
+        "3.0": 3.30,
+        "5.0": 3.40,
+        "7.0": 3.50,
+        "10.0": 3.60,
+        "15.0": 3.80,
+        "20.0": 3.90,
+        "25.0": 4.00,
+        "30.0": 4.10
+    }
 }
-
 #yield_curve = json.dumps(yield_curve_str, indent=4)

@@ -38,7 +38,7 @@ def generate_prompt(isin):
             - Interest Calculation Method: {market_convention.get('Interest Calculation Method', 'N/A')}
             - Compounding Frequency: {market_convention.get('Compounding Frequency', 'N/A')}
     
-            The yield curve for {currency} as of today is:
+            The yield curve for {isin} as of today is:
             {json.dumps(yield_curve_data)}
     
             Using the above data, please calculate the bond price, Yield to Maturity (YTM), next coupon date, and any other relevant metrics.

@@ -1,0 +1,13 @@
+openai
+streamlit
+python-dotenv
+pytest-mock
+tiktoken
+detect
+charset_normalizer
+nltk
+langdetect
+pdfplumber
+
+#nltk.download('stopwords')
+#nltk.download('wordnet')

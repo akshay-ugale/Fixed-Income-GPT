@@ -1,7 +1,7 @@
 import json
 
 bond_data_2 = {
-    "SE0009241524": {
+    "US0009241524": {
         "Security ID / Värdepappers ID": "LUNDB 1.337 1023",
         "Maturity Date": "2023-10-24",
         "Nominal": 3000000,
@@ -11,7 +11,7 @@ bond_data_2 = {
         "Face Value": 1000,
         "Coupon": 4
     },
-    "SE0011281567": {
+    "USE0011281567": {
         "Security ID / Värdepappers ID": "HOLM FRN 0522",
         "Maturity Date": "2022-05-23",
         "Nominal": 10000000,
@@ -21,7 +21,7 @@ bond_data_2 = {
         "Face Value": 1000,
         "Coupon": 4.5
     },
-    "SE0010599001": {
+    "US0010599001": {
         "Security ID / Värdepappers ID": "FVH FRN 0225",
         "Maturity Date": "2025-02-24",
         "Nominal": 10000000,
@@ -121,16 +121,6 @@ bond_data_2 = {
         "Face Value": 1000,
         "Coupon": 4.5
     }
-}
-
-bond_data = {
-    "ISIN": "US1234567890",
-    "Coupon Rate": 5.0,  # Percentage
-    "Coupon Frequency": "Annually",
-    "Face Value": 1000,  # In the bond's currency
-    "Issue Date": "2020-01-01",
-    "Maturity Date": "2030-01-01",
-    "Currency": "USD"
 }
 
 # Convert dictionary to JSON string
